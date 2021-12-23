@@ -1,0 +1,2 @@
+# ORMs-Sequelize
+ workshop repo
