@@ -1,0 +1,11 @@
+{
+  "name": "orms-sequelize",
+  "version": "1.0.0",
+  "description": "workshop project",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "M Hanghiuc",
+  "license": "ISC"
+}
