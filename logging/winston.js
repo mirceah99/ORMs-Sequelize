@@ -4,7 +4,8 @@ const myFormat = winston.format.printf(({
   level, message, timestamp, stack,
 }) => `${timestamp} ${level}: ${stack || message}`);
 const date = new Date();
-const logFileName = `${date.getFullYear()}_${date.getMonth()}_${date.getDay()}_${date.getHours()}_${date.getMinutes()}_${date.getSeconds()}`;
+
+const logFileName = `${date.getFullYear()}_${date.getMonth() + 1}_${date.getDate()}_${date.getHours()}_${date.getMinutes()}_${date.getSeconds()}`;
 // i need to assign it in declaration for intellisense and to avoid no one if match
 let logger = winston.createLogger();
 if (process.env.NODE_ENV === undefined) {
